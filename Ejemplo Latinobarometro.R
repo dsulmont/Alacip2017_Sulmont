@@ -59,6 +59,7 @@ latbar15$esc.dem[latbar15$esc.dem < 0] <- NA
 library(Rmisc)
 
 t2 <- summarySE(data = latbar15, measurevar = "esc.dem", groupvars = "idenpa", na.rm = T )
+t2
 t2$idenpa <- factor(t2$idenpa)
 
 ggplot(data  = t2, aes(x = reorder(idenpa, esc.dem),  y = esc.dem)) + 

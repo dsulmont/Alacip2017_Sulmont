@@ -64,3 +64,5 @@ chisq.test(tab1)
 assocstats(tab1)
 
 GKgamma(tab1)
+
+
